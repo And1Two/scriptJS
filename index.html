@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>scriptJS</title>
+    <meta charset="utf-8">
+    <script src="scriptJS.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: green;
+            font-size: 22px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        textarea, button {
+            background-color: #333;
+            border: 3px solid green;
+            color: green;
+        }
+
+        textarea {
+            width: calc(100% - 27px);
+            height: 420px;
+            padding: 12px;
+            border-right: none;  
+            border-radius: 8px 0 0 8px;
+        }
+
+        button {
+            height: 100%;
+            border-radius: 0 8px 8px 0;
+            font-size: 80px;           
+        }
+
+        #editor {
+            display: grid;
+            grid-template-columns: auto 60px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Input:</h1>
+        <div id="editor">
+            <textarea id="source">concat(
+    "a",
+    concat(
+        add(1, 2), 
+        concat("    concat('a', 'b')", "end")
+    )
+)</textarea>
+            <button type="button" onclick="scriptJS(document.getElementById('source').value);">+</button>
+        </div>
+
+        <h1 style="margin-top: 20px;">Output:</h1>
+        <div id="script"></div>
+    </main>
+</body>
+</html>
