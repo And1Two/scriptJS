@@ -33,7 +33,7 @@
          * 
          */
         add: function(a, b) {
-            return parseInt(a) + parseInt(b);
+            return Number(a) + Number(b);
         },
 
         /**
