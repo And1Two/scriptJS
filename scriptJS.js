@@ -3,7 +3,7 @@
  * Just a kind of Parser :P
  * 2020 by Andi Stancato
  */
-(function(win, doc){
+(function(win){
     "use script";
 
     /**
@@ -19,9 +19,9 @@
         }
 
         try {
-            doc.getElementById("script").innerHTML = (new Function("$", "return " + source + ";"))(sjs);
+            return (new Function("$", "return " + source + ";"))(sjs);
         }catch(e) {
-            doc.getElementById("script").innerHTML = "Syntax Error";
+            return e;
         }
     };
 
@@ -44,4 +44,4 @@
         }
     };
 
-})(window, document);
+})(window);
