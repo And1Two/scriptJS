@@ -4,7 +4,7 @@
  * 2020 by Andi Stancato
  */
 (function(win){
-    "use script";
+    "use strict";
 
     /**
      * The Madness beginns here X_X
