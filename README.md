@@ -1,2 +1,2 @@
 # scriptJS
-scriptJS is a Script Language written in JavaScript :D Just to have fun....
+Execute JavaScript at Runtime with scriptJS :D
